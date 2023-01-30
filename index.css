@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    box-shadow: 1px 1px 9px -3px;
+}
+.title{}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+.links h2:hover{
+    background-color: #ccc;
+}
+.links h2,.title h1{
+    margin: 0 10px;
+    padding: 15px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.img-header{
+    background-image: url(architect.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+}
+#btn{
+    background-color: #777;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+h1,h2,h3 {
+    font-weight: 500 !important;
+}
+.img-header h1{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.img-header h1 b{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 15px;
+}
+.parent{
+    padding: 50px;
+}
+.cards, .about, .employyes, .form{
+    padding: 25px;
+    margin-top: 40px;
+}
+.about{
+    margin-top: 20px !important;
+}
+hr{
+    margin: 20px 0;
+    background-color: #ccc;
+    opacity: 0.4;
+}
+.second-cards-set{
+    margin-top: 40px;
+}
+.first-cards-set, .second-cards-set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.first-cards-set div span , .second-cards-set div span {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+.first-cards-set div:nth-child(1){
+    background: url(./house2.jpg);
+    background-size: cover;
+    width: 48%;
+    height: 500px;
+}
+.first-cards-set div:nth-child(2){
+    background: url(./house3.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-cards-set div:nth-child(1){
+    background: url(./house4.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-cards-set div:nth-child(2){
+    background: url(./house5.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about-text{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.employyes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.employyes .emp{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.employyes .emp h3, .employyes .emp span, .employyes .emp p{
+    margin: 10px 0;
+}
+.employyes .emp h3{
+    font-size: 30px;
+}
+.employyes .emp span{
+    color: #777;
+    font-weight: bold;
+}
+.employyes .emp p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.employyes .emp button{
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.employyes .emp button:hover{
+    background-color: #ccc;
+}
+.employyes .emp img{
+    width: 100%;
+    filter: brightness(0.6);
+}
+.inputs-area{
+    margin-top: 20px;
+}
+.inputs-area div{
+    width: 100%;
+}
+.inputs-area div input{
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+    text-indent: 10px;
+}
+.form button{
+    width: max-content;
+    padding: 20px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+}
+.form button:hover{
+    background-color: #ccc;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+footer h3{
+    width: 100%;
+    text-align: center;
+}
+footer h3 a{
+    text-decoration: none;
+    color: yellow;
+}
+@media (max-width: 992px){
+    .parent{
+        padding: 0;
+    }
+    .first-cards-set, .second-cards-set{
+        flex-wrap: wrap;
+    }
+    .first-cards-set div:nth-child(1), .second-cards-set div:nth-child(1){
+        width:100%;
+        margin: 10px 0;
+    }
+    .first-cards-set div:nth-child(2), .second-cards-set div:nth-child(2){
+        width:100%;
+        margin: 10px 0;
+    }
+    .nav{
+        flex-wrap: wrap;
+        height: 100px;
+        padding-left: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .nav .title{
+        width: 100%;
+    }
+    .nav .links h2{
+        padding: 13px;
+        letter-spacing: 3px;
+    }
+}
+#scrolltotop{
+    background-color: #a3a0d1;
+    width: 50px;
+    height: 30px;
+}
+}
